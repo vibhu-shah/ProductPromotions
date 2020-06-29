@@ -11,6 +11,8 @@ namespace Executable.UnitTest.Tests
     [TestClass()]
     public class PromotionTest
     {
+
+        // Test Scenario1 as per Problem Statement
         [TestMethod()]
         public void CreateOrder1()
         {
@@ -21,6 +23,7 @@ namespace Executable.UnitTest.Tests
             //Assert.Fail();
         }
 
+        // Test Scenario2 as per Problem Statement
         [TestMethod()]
         public void CreateOrder2()
         {
@@ -31,6 +34,7 @@ namespace Executable.UnitTest.Tests
             //Assert.Fail();
         }
 
+        // Test Scenario3 as per Problem Statement
         [TestMethod()]
         public void CreateOrder3()
         {

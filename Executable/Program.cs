@@ -8,12 +8,6 @@ namespace Executable
     class Program
     {
 
-
-        //Product prodE = new Product("Product5", 50, "A");
-        // add items to the cart
-
-
-
         static void Main(string[] args)
         {
             Order order1 = CreateOrder1();
@@ -30,18 +24,15 @@ namespace Executable
         private static Order CreateOrder1()
         {
             Order order = new Order();
-            //Product prodA = new Product("Product1", 50, "A");
-            // add items to the cart
+
             Product prodA = new Product("Product1", 50, "A");
             Product prodB = new Product("Product2", 30, "B");
             Product prodC = new Product("Product3", 20, "C");
-            // Product prodD = new Product("Product4", 15, "D");
 
             order.AddProduct(prodA);
             order.AddProduct(prodB);
             order.AddProduct(prodC);
-            //order.AddProduct(new Product("Product1", 50, "A"));
-            //order.AddProduct(new Product("Product1", 50, "A"));
+           
 
             applyAllDiscounts(order);
 
@@ -53,12 +44,9 @@ namespace Executable
         private static Order CreateOrder2()
         {
             Order order = new Order();
-            //Product prodA = new Product("Product1", 50, "A");
-            // add items to the cart
-
+            
             Product prodB = new Product("Product2", 30, "B");
             Product prodC = new Product("Product3", 20, "C");
-            // Product prodD = new Product("Product4", 15, "D");
 
             order.AddProduct(new Product("Product1", 50, "A"));
             order.AddProduct(new Product("Product1", 50, "A"));
@@ -73,13 +61,6 @@ namespace Executable
             order.AddProduct(new Product("Product2", 30, "B"));
 
             order.AddProduct(new Product("Product3", 20, "C"));
-            //Product prodC = ;
-
-            //order.AddProduct(prodB);
-            //order.AddProduct(prodC);
-            //order.AddProduct(new Product("Product1", 50, "A"));
-            //order.AddProduct(new Product("Product1", 50, "A"));
-
             applyAllDiscounts(order);
 
 
@@ -89,8 +70,7 @@ namespace Executable
         private static Order CreateOrder3()
         {
             Order order = new Order();
-            //Product prodA = new Product("Product1", 50, "A");
-            // add items to the cart
+         
             // 3 A Product
             order.AddProduct(new Product("Product1", 50, "A"));
             order.AddProduct(new Product("Product1", 50, "A"));
@@ -106,10 +86,6 @@ namespace Executable
             // 1 C & 1 D
             order.AddProduct(new Product("Product3", 20, "C"));
             order.AddProduct(new Product("Product4", 15, "D"));
-          
-            //order.AddProduct(new Product("Product1", 50, "A"));
-            //order.AddProduct(new Product("Product1", 50, "A"));
-
 
             applyAllDiscounts(order);
 
